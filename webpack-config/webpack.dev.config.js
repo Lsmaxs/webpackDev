@@ -1,17 +1,18 @@
 
+global.isProd = false;
 
 module.exports = {
-    entry:"",
+    entry:require('./options/entry.config'),
 
-    output:"",
+    output:require('./options/output.config'),
 
-    module:"",
+    module:require('./options/module.dev.config'),
 
-    resolve:"",
+    resolve:require('./options/reslove.config'),
 
-    plugins:"",
+    plugins:require('./options/plugins.dev.config'),
 
-    externals:"",
+    externals:require('./options/externals.config'),
 
-    devServer:"",
+    devServer:require('./vendor/devServer.config'),
 }

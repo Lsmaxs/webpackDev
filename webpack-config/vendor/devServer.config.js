@@ -1,5 +1,5 @@
 module.exports = {
-    contentBase:"./build/",
+    contentBase:"./dist/",
     host:"localhost",
     port:8889,
     inline:true,//是否监控js变化
