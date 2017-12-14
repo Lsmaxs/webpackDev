@@ -1,0 +1,31 @@
+@import "reset";
+
+html{
+  font-size:10vw;
+}
+
+/* 添加border-box属性，方便计算padding */
+html * {
+  box-sizing: border-box;
+}
+
+/* 清除浮动样式 */
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* 由于在该样式主要应用在m站，所以hover样式基本无用 */
+a:hover {
+  text-decoration: none;
+}
+
+/* 增加对字符截断 */
+p {
+  word-wrap: break-word;
+}
+
+

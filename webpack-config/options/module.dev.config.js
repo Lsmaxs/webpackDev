@@ -24,7 +24,6 @@ moduleConfig.rules.push({
         },
         {
             loader: 'css-loader',
-
         },
         {
             loader: 'sass-loader',

@@ -8,7 +8,7 @@ module.exports = {
 
     module:require('./options/module.dev.config'),
 
-    resolve:require('./options/reslove.config'),
+    resolve:require('./options/resolve.config'),
 
     plugins:require('./options/plugins.dev.config'),
 
