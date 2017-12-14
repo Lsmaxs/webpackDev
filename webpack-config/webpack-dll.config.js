@@ -10,6 +10,7 @@ rimraf(dirVars.dllDir, fs, function cb() {
 module.exports = {
     entry: {
         dll: [
+            `${dirVars.libsDir}/flexible/index.js`,
             'axios',
         ],
     },

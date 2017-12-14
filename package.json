@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --progress --colors --bail",
+    "build": "./node_modules/.bin/webpack --progress --colors --bail --config ./webpack-config/webpack.product.config.js",
     "dev": "./node_modules/.bin/webpack --progress --colors --config ./webpack-config/webpack.dev.config.js",
     "start": "./node_modules/.bin/webpack-dev-server --config ./webpack-config/webpack.dev.config.js --open --hot",
     "profile": "./node_modules/.bin/webpack --colors --profile --display-modules --config ./webpack.dev.config.js",
@@ -13,6 +13,7 @@
     "analyze": "npm run analyse"
   },
   "devDependencies": {
+    "add-asset-html-webpack-plugin": "^2.1.2",
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
