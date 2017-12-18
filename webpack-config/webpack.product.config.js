@@ -1,6 +1,7 @@
 
 
 global.isProd = true;
+global.showAnalyzer = false;
 
 module.exports={
     devtool: "source-map",
