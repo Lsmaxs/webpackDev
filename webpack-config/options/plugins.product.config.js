@@ -43,7 +43,10 @@ pluginsConfig.push(new webpack.LoaderOptionsPlugin({
 这样就算引入了新的模块，也不会影响 module id 的值，只要模块的路径不改变的话。 */
 pluginsConfig.push(new webpack.HashedModuleIdsPlugin());
 
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-pluginsConfig.push(new BundleAnalyzerPlugin({analyzerPort: 9898,}))
+if(global.showAnalyzer){
+    const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+    pluginsConfig.push(new BundleAnalyzerPlugin({analyzerPort: 9898,}))
+}
+
 
 module.exports = pluginsConfig;
