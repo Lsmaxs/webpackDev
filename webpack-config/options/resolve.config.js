@@ -7,6 +7,7 @@ module.exports = {
         iconfontDir: path.resolve(dirVars.buildDir, "iconfont/"),
         sassDir: path.resolve(dirVars.buildDir, "style/sass/"),
         libs: dirVars.libsDir,
+        src:dirVars.srcRootDir
     },
     // 当require的模块找不到时，尝试添加这些后缀后进行寻找
     extensions: ['.js', '.css', '.scss'],

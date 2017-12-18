@@ -9,7 +9,7 @@
     "start": "./node_modules/.bin/webpack-dev-server --config ./webpack-config/webpack.dev.config.js --open --hot",
     "profile": "./node_modules/.bin/webpack --colors --profile --display-modules --config ./webpack.dev.config.js",
     "dll": "./node_modules/.bin/webpack --progress --colors --config ./webpack-config/webpack-dll.config.js",
-    "analyse": "webpack --json > ./build/stats.json && webpack-bundle-analyzer --port 8989 ./build/stats.json",
+    "analyse": "webpack --json > ../stats.json && webpack-bundle-analyzer --port 8989 ../stats.json",
     "analyze": "npm run analyse"
   },
   "devDependencies": {
@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "html2canvas": "^1.0.0-alpha.4",
     "jquery": "^3.2.1"
   }
 }
